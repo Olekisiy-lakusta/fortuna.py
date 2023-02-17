@@ -1,0 +1,19 @@
+import random
+import itertools
+from enum import Enum
+_ranks = {2:2, 3:3, 4:4, 5:5, 6:6, 7:7, 8:8, 9:9, 10:10, 11:'J', 12:'Q', 13:'K', 14:'A'}
+# or  ranks = list(range(6, 10 + 1)) + list('JQKA')
+suits = {
+    'spades': '\u2660',
+    'hearts': '\u2665',
+    'diamonds': '\u2666',
+    'clubs': '\u2663'
+    }
+
+for i in range(4):
+ a=(random.randrange(2,14))
+ b=(random.randrange(1,4))
+ suit = {1:'spades',2:'hearts',3:'diamonds',4:'clubs'}
+ print(_ranks[a],suits[suit[b]])
+
+print('Joker')
